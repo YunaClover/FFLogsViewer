@@ -250,7 +250,7 @@ public unsafe class OpenWithManager
             if (Service.Configuration.OpenWith.IsPartyFinderEnabled)
             {
                 var hasFailed = data->LastPatchHotfixTimestamp == 0; // previously 92/0x5C was checked, but that's not documented in CS yet. this works as a replacement.
-                var isPrivate = data->JoinConditionFlags.HasFlag(AgentLookingForGroup.JoinCondition.PrivateParty);
+                var isPrivate = data->JoinConditionFlags.HasFlag(AgentLookingForGroup.JoinCondition.Private);
                 var isJoining = this.isJoiningPartyFinderOffset != 0 && *(byte*)(someAgent + this.isJoiningPartyFinderOffset) != 0;
 
                 if (!hasFailed && !isPrivate && !isJoining)
