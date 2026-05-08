@@ -1,1 +1,2 @@
-### 由于版本同步+上游已支持国服，该fork不再维护
+国服7.5
+https://raw.githubusercontent.com/YunaClover/Dalamud-Plugins/refs/heads/main/repo.json
